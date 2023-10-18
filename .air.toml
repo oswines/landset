@@ -1,0 +1,19 @@
+# air.toml
+
+# The configuration for the `air` tool
+
+[build]
+cmd = "go build -o tmp/main cmd/hoard/main.go"
+bin = "tmp/main serve"
+watch = [
+    "**/*.go",           # Watch all Go files recursively
+    "**/*.html",         # Watch HTML templates
+    "**/*.css",          # Watch CSS files
+]
+exclude = [
+    "tmp/*",
+    "build/*",
+]
+clear = true
+delay = 1000  # 1 second
+kill_delay = 1000  # 1 second

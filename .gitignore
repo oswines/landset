@@ -1,6 +1,7 @@
 # Mac OS X files
 .DS_Store
 
+tmp
 # Binaries for programs and plugins
 *.exe
 *.exe~
